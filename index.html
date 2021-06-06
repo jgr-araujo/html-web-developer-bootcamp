@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+	<title>Podflix</title>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<link rel="stylesheet" href="style/main.css">
-	<title>Netflix Clone</title>
+	
+	<!--Owl Carrousel -->
+	<link rel="stylesheet" href="style/owl/owl.carousel.min.css"> 
+	<link rel="stylesheet" href="style/owl/owl.theme.default.min.css"> 
+	
 </head>
+
 <body>
 	<header>
 		<div class="container">
-			<h2 class="logo">NETFLIX</h2>
+			<h2 class="logo">PODFLIX</h2>
 			<nav>
 				<a href="#">Início</a>
 				<a href="#">Séries</a>
@@ -18,5 +25,72 @@
 			</nav>
 		</div>
 	</header>
+	<main>
+		<div class="main-podcast">
+			<div class="container">
+				<h3 class="podcast-title">COSMIC VERTIGO</h3>
+				<p class="podcast-description">Do you ever feel dizzy when you think about the incomprehensible scale of space? We call that feeling Cosmic Vertigo. Welcome to a head-spinning conversation between two friends who study the sky for a living.</p>
+			
+				<div class="buttons">
+
+					<button role="button" class="button">
+						<i class="fas fa-play"></i>
+						ASSISTIR AGORA
+					</button>
+					<button role="button" class="button">
+						<i class="fas fa-info-circle"></i>
+						MAIS INFORMAÇÕES
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="carrousel">
+		<div class="owl-carousel owl-theme">
+			<div class="item">
+				<img class="podcast" src="img/mini1.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini2.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini3.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini4.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini5.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini6.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini7.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini8.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini9.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini10.jpg">
+			</div>	
+			<div class="item">
+				<img class="podcast" src="img/mini11.jpg">
+			</div>	
+		</div> 
+
+	</div>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/474d4e06c0.js" crossorigin="anonymous"></script>
+	
+	<!-- Owl Carrousel scripts-->
+	<script src="js/owl/jquery.min.js"></script>
+	<script src="js/owl/owl.carousel.min.js"></script>
+	<script src="js/owl/setup.js"></script>
 </body>
 </html>
