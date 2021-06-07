@@ -58,8 +58,13 @@ function startGame() {
 	if(direction == "left") snakeX -= box;
 	if(direction == "up") snakeY -= box;
 	if(direction == "down") snakeY += box;
-	
-	snake.pop();
+
+	if(snakeX != prey.x || snakeY != prey.y){
+		snake.pop();
+	}else{
+		prey.x = Math.floor(Math.random() * 15 + 1) * box,
+		prey.y = Math.floor(Math.random() * 15 + 1) * box
+	} 
 
 	let newHead = {
 		x: snakeX,
